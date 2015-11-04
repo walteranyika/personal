@@ -1,0 +1,62 @@
+package com.walter.xyz;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+String[] data={"a","b","c","d","e"};
+int index=0;
+int size;
+TextView tvData;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		tvData=(TextView) findViewById(R.id.textViewMchongoano);
+		size= data.length;
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+    
+	public void next(View v)
+	{
+		   index++;//move to the next item
+		   //checkin the bounds
+		   if(index>=0 && index < size)
+		   {
+			 tvData.setText( data[index] );   
+		   }else
+		   {
+			 Toast.makeText(this, "REACHED THE END", Toast.LENGTH_LONG).show();   
+		     index=0;
+		   }	
+	}
+	public void prev(View v)
+	{
+		   index--;//move to the next item
+		   //checkin the bounds
+		   if(index>=0 && index < size)
+		   {
+			 tvData.setText( data[index] );   
+		   }else
+		   {
+			 Toast.makeText(this, "REACHED THE END", Toast.LENGTH_LONG).show();   
+		     index=size-1;
+		   }	
+	}	
+	
+	
+	
+	
+	
+}

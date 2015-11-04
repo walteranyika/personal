@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PappyMappy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="maps_page">Go To Maps Page</string>
+    <string name="my_location">Go To My Location</string>
+    <string name="title_activity_my_maps">Map</string>
+    <string name="title_activity_my_location">MyLocationActivity</string>
+</resources>

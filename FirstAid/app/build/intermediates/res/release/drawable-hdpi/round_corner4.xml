@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom 2dp Shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#B2FF59" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+    <!-- White Top color -->
+    <item android:bottom="3px">
+        <shape android:shape="rectangle">
+            <solid android:color="#B2FF59" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list><!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/drawable-hdpi/round_corner4.xml -->

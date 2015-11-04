@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExampleAn</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="fade">Fade Animation</string>
+    <string name="zoom">Zoom Animation</string>
+    <string name="rotate">Rotate Animation</string>
+    <string name="move_anim">Move Animation</string>
+    <string name="my_image">My Image</string>
+    <string name="animation">Animation</string>
+    <string name="title_activity_frame">FrameActivity</string>
+    <string name="frame_">Frame Animation</string>
+    <string name="load_anim">Load Animation</string>
+
+</resources>

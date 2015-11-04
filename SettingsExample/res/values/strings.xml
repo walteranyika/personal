@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Settings Example</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+     
+    <string-array name="listArray">
+        <item>Football</item>
+        <item>Rugby</item>        
+        <item>Hockey</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+        <string name="settins_values">Settings Values</string>
+</resources>

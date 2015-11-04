@@ -1,0 +1,8 @@
+1439195463876	Rename field 'editText1'
+1439195477829	Rename field 'listView1'
+1439195628021	Extracts string 'Wrong Turn Five' into R.string.wrong_turn_five
+1439195650853	Extracts string 'Horror' into R.string.horror
+1439195678552	Extracts string '2013' into R.string.year
+1439196307246	Delete element
+1439197092442	Extract method 'populate_list_with_random_data'
+1439357842945	Rename local variable 'arg0'

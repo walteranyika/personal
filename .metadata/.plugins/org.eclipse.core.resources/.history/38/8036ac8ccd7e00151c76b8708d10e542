@@ -1,0 +1,37 @@
+package com.walter.lesson13;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class TestActivity extends Activity {
+CustomAdapter adapter;
+ListView listView;
+ArrayList<Book> books_array;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_test);
+		listView=(ListView) findViewById(R.id.listViewTest);
+		books_array=new ArrayList<Book>();
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		books_array.add(new Book("Man Of The People", "Chinua Achebe"));
+		adapter=new CustomAdapter(this,books_array);
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.test, menu);
+		return true;
+	}
+
+}

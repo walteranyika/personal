@@ -1,0 +1,4 @@
+<h1><font color="#4CAF50">Important Disclaimer: </font></h1>
+<h5><font color="#F44336">This information is not intended as a substitute for professional medical advice, emergency treatment or formal first-aid training. 
+Do NOT use this information to diagnose or develop a treatment plan for a health problem or disease without consulting a qualified health care provider. 
+If you're in a life-threatening or emergency medical situation, seek medical assistance immediately.<?font></h5>

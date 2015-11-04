@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+
+    android:paddingTop="5dp"
+    tools:context=".AsthmaAttackActivity" >
+
+    <ImageView
+        android:id="@+id/imageAtshma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:src="@drawable/asthmaimg" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.55" >
+
+        <TextView
+            android:id="@+id/tvAsthma"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/round_corner2"
+            android:padding="5dp"
+            android:text="@string/hello_world" 
+           />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_asthma"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:onClick="asthma"
+        android:text="@string/watch_video"
+        android:textStyle="bold|normal"
+        android:textColor="#ffffff" 
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<h2><font color="#4CAF50">First Aid for Bites and Stings</font></h2>
+
+<h4><font color="#F44336">General Signs and Symptoms associated with bites and stings:</font></h4>
+<p>1. Redness<p>
+<p>2. Swelling<p>
+<p>3. Pain</br><p>
+<p>4. Itching<p>
+<p>5. Nausea<p>
+<p>6. Problems breathing<p>
+
+<h4><font color="#F44336">First Aid</font></h4>
+<p>1.Remove jewelry and constrictive clothing<p>
+<p>2.Wash the area with soap and clean water<p>
+<p>3.Cover the area with an adhesive bandage or gauze wrap<p>
+<p>4.Apply ice if needed to reduce pain and swelling<p>

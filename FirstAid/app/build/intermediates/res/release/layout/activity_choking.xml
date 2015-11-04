@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#9E9E9E"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+
+    android:paddingTop="5dp"
+    tools:context=".ChokingActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvChoking"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:src="@drawable/chokingimg" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_weight="0.69" >
+
+        <TextView
+            android:id="@+id/tvChoking"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/round_corner2"
+            android:padding="5dp"
+            android:text="@string/hello_world" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_video" 
+        android:layout_gravity="center"
+        android:onClick="choking"
+        android:textStyle="bold|normal"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFffff"/>
+
+</LinearLayout>
+<!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/layout/activity_choking.xml -->

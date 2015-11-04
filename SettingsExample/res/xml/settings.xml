@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:title="Your Username" 
+                        android:summary="Enter Your username to use for app login"
+                        android:key="username"/>
+    
+    <CheckBoxPreference android:title="Application Updates"
+                        android:defaultValue="false"
+                        android:summary="If selected, the application will auto update"
+                        android:key="updates"
+                        />
+    <ListPreference    android:title="Favourite Sports"
+                       android:summary="Select Your Favourite Sports"
+                       android:defaultValue="1"
+                       android:key="sports"
+                       android:entries="@array/listArray"
+                       android:entryValues="@array/listValues"/>
+  
+</PreferenceScreen>

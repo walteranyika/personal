@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Remote Storage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="save_btn">"Save "</string>
+    <string name="names_hint">Full Names</string>
+    <string name="email_hint">Email</string>
+    <string name="course_hint">"Course "</string>
+    <string name="records_btn">Count Records</string>
+
+</resources>

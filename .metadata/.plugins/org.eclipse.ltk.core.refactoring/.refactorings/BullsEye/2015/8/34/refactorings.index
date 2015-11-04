@@ -1,0 +1,16 @@
+1439905826814	Delete element
+1439905832565	Delete element
+1439905908362	Rename package 'com.walter.bullseye.util'
+1439906038691	Delete elements
+1439906327472	Extracts string 'Put the Bulls Eye as close as you can to :' into R.string.bulls_eye_lbl1
+1439906411290	Extracts string '100' into R.string.one_hundred_place_holder
+1439907395236	Extracts string '1' into R.string.one
+1439907467252	Extracts string '100' into R.string.hundred
+1439907624374	Extracts string 'Hit Me' into R.string.hit_me
+1439907928199	Extracts string 'Score' into R.string.score
+1439907955147	Extracts string '9999' into R.string.placeholder
+1439907987670	Extracts string 'Round' into R.string.round
+1439908320975	Extracts string 'Info' into R.string.info
+1439908535220	Extracts string 'Start Over' into R.string.start_over
+1439909216631	Rename field 'textView2'
+1439909237733	Rename field 'seekBar1'

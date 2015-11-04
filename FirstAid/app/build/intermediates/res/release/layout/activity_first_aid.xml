@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    tools:context=".FirstAidActivity" 
+    android:background="#9E9E9E">
+
+    
+    <ListView
+        android:id="@+id/lvFirstAid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        >
+    </ListView>
+    
+
+</RelativeLayout>
+<!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/layout/activity_first_aid.xml -->

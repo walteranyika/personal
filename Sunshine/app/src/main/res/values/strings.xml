@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Sunshine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="setting_activity_label">Settings</string>
+    <string name="pref_location_title">Location</string>
+    <string name="pref_location_summary">City Code For Your Location</string>
+    <string name="location_default_value">94043</string>
+    <string name="location_key">location</string>
+    <string name="units_default_value">metric</string>
+    <string name="units_summary">Units To Be Shown</string>
+    <string name="units_pref_title">Temprature Units</string>
+    <string name="units_key">units</string>
+    <string name="my_location">My Location</string>
+    <string name="share_action">Share</string>
+
+    <string-array name="title_units">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string-array name="title_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+</resources>

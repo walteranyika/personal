@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context=".UnconsciousAndBreathingActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/tvUnconscious"
+        android:paddingBottom="5dp"
+        android:src="@drawable/uncon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_weight="0.75" >
+
+        <TextView
+            android:id="@+id/tvUnconscious"
+            android:layout_width="match_parent"
+            android:layout_height="289dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/round_corner2"
+            android:text="@string/hello_world" 
+            android:padding="5dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_video"
+        android:layout_gravity="center" 
+        android:textColor="#FFffff"
+        android:textStyle="bold|normal"
+		android:textSize="21sp"
+		android:onClick="unconscious"
+		android:background="@drawable/buttonshape"/>
+
+</LinearLayout>

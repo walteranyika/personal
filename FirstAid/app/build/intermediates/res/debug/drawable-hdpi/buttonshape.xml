@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+<corners
+android:radius="38dp"
+/>
+<gradient
+android:angle="0"
+android:centerX="61%"
+android:centerColor="#3F51B5"
+android:startColor="#304FFE"
+android:endColor="#304FFE"
+android:type="linear"
+/>
+<padding
+android:left="0dp"
+android:top="0dp"
+android:right="0dp"
+android:bottom="0dp"
+/>
+<size
+android:width="166dp"
+android:height="30dp"
+/>
+</shape><!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/drawable-hdpi/buttonshape.xml -->

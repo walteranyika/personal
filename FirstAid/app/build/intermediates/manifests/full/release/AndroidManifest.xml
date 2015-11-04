@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tushi.com.shadiih.firstaid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/learnaid"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.shadiih.firstaid1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.FirstAidActivity"
+            android:label="@string/title_activity_first_aid" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.ChokingActivity"
+            android:label="@string/title_activity_choking"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.DisclaimerActivity"
+            android:label="@string/title_activity_disclaimer"
+            android:parentActivityName="com.shadiih.firstaid1.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.AsthmaAttackActivity"
+            android:label="@string/title_activity_asthma_attack"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.BitesAndStingsActivity"
+            android:label="@string/title_activity_bites_and_stings"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.BleedingActivity"
+            android:label="@string/title_activity_bleeding"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.BrokenBoneActivity"
+            android:label="@string/title_activity_broken_bone"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.BurnsActivity"
+            android:label="@string/title_activity_burns"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.DiabetesActivity"
+            android:label="@string/title_activity_diabetes"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.DistressedActivity"
+            android:label="@string/title_activity_distressed"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.HeadInjuryActivity"
+            android:label="@string/title_activity_head_injury"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.HeartAttackActivity"
+            android:label="@string/title_activity_heart_attack"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.NoseBleedActivity"
+            android:label="@string/title_activity_nose_bleed"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.PoisonActivity"
+            android:label="@string/title_activity_poison"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.SeizuresEpilepsyActivity"
+            android:label="@string/title_activity_seizures_epilepsy"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.StrokeActivity"
+            android:label="@string/title_activity_stroke"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.UnconsciousAndBreathingActivity"
+            android:label="@string/title_activity_unconscious_and_breathing"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <activity
+            android:name="com.shadiih.firstaid1.WoundsActivity"
+            android:label="@string/title_activity_wounds"
+            android:parentActivityName="com.shadiih.firstaid1.FirstAidActivity" >
+        </activity>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

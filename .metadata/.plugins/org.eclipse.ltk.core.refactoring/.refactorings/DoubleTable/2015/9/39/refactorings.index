@@ -1,0 +1,13 @@
+1443095519301	Extracts string 'null' into R.string.majiana
+1443095540660	Extracts string 'null' into R.string.email
+1443095557740	Extracts string 'null' into R.string.phone
+1443095580415	Extracts string 'null' into R.string.save
+1443095600670	Extracts string 'null' into R.string.scores
+1443098044239	Rename local variable 'table_students_array'
+1443100797689	Extracts string 'null' into R.string.save_score
+1443100850253	Extracts string 'null' into R.string.scores_hint
+1443100873404	Extracts string 'null' into R.string.date
+1443100922057	Rename field 'editText1'
+1443100935484	Rename field 'editText2'
+1443101777918	Rename local variable 'arg0'
+1443102797463	Rename method 'countRecords'

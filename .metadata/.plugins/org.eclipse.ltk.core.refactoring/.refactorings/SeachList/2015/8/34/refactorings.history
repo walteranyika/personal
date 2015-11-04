@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extracts string &apos;Placeholder&apos; into R.string.placeholder" description="Extracts string &apos;Placeholder&apos; into R.string.placeholder" file="/SeachList/res/layout/list_item.xml" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="EDIT_SOURCE" proj="/SeachList" rplc-all-java="false" rplc-all-xml="false" sel-end="413" sel-start="388" stamp="1440147030745" tok-esc="Placeholder" xml-attr-name="android:text"/>
+</session>

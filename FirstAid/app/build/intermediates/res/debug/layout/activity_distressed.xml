@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context=".DistressedActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/stressedimg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_weight="0.63" >
+
+        <TextView
+            android:id="@+id/tvDistressed"
+            android:layout_width="match_parent"
+            android:layout_height="289dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/round_corner2"
+            android:padding="5dp"
+            android:text="@string/hello_world" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_video"
+        android:textColor="#ffffff"
+        android:textStyle="bold|normal"
+		android:textSize="21sp"
+        android:layout_gravity="center" 
+        android:onClick="distressed"
+        android:background="@drawable/buttonshape"/>
+
+</LinearLayout>
+<!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/layout/activity_distressed.xml -->

@@ -1,0 +1,26 @@
+<h2><font color="#4CAF50">First Aid for Wounds</font></h2>
+<font color="#F44336">Minor wounds </font><font color="#4CAF50">include abrasions, lacerations, punctures and incisions. 
+The most significant issues to consider with any open wound are control of bleeding and infection.</font>
+
+<h4><font color="#4CAF50">First Aid:</font></h4>
+<p><font color="#3F51B5">If bleeding, apply direct pressure with a clean cloth or absorbent pad.</font><p>
+<p><font color="#3F51B5">Wash area with antibacterial soap and clean until there appears to be no foreign matter in the wound.</font><p>
+<p><font color="#3F51B5">Cover area with an adhesive bandage or gauze wrap.</font><p>
+
+
+<p><font color="#F44336">Crush Injury:</font> Occurs when a body part is subjected to a high degree of force or pressure . 
+Example: smashed fingers in door.<p>
+
+<h4><font color="#4CAF50">First Aid:</font></h4>
+<p><font color="#3F51B5">Apply ice just as you would with a bruising injury.
+If pain is severe and does not lessen with ice or there is decreased sensation, weakness, or paleness of the skin in the affected area, seek emergency care.</font><p>
+
+<p><font color="#F44336">Bruising: </font><font color="#3F51B5">Caused by broken blood vessels leaking blood under the skin. 
+Bruising can be minimal or large and severe.</font><p>
+
+<h4><font color="#4CAF50">First Aid</font></h4>
+<p><font color="#3F51B5">Apply ice to injury to reduce pain, bleeding and swelling.
+To prevent frost bite to the injured area, place a thin towel or cloth between the skin and ice. 
+Limit ice application to 20 minutes on, 20 off.</font><p>
+
+

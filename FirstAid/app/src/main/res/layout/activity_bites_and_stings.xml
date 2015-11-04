@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+
+    android:paddingTop="5dp"
+    tools:context=".BitesAndStingsActivity" 
+    android:background="#9E9E9E">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/tvBites_stings"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:src="@drawable/bitesimg1" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.62" >
+
+        <TextView
+            android:id="@+id/tvBites_stings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/round_corner2"
+            android:padding="5dp"
+            android:text="@string/hello_world" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_video"
+        android:layout_gravity="center" 
+        android:onClick="bites_stings"
+        android:textStyle="bold|normal"
+        android:background="@drawable/buttonshape"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

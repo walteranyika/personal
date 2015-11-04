@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context=".StrokeActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/tvStroke"
+        android:paddingBottom="5dp"
+        android:src="@drawable/strokeimg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_weight="0.55" >
+
+        <TextView
+            android:id="@+id/tvStroke"
+            android:layout_width="match_parent"
+            android:layout_height="289dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_corner2"
+            android:text="@string/hello_world"
+            android:padding="5dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_video"
+        android:layout_gravity="center"
+        android:textColor="#FFffff"
+        android:textStyle="bold|normal"
+		android:textSize="21sp" 
+		android:onClick="stroke"
+		android:background="@drawable/buttonshape"/>
+
+</LinearLayout>

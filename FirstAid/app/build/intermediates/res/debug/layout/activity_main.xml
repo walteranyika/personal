@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" 
+  	 android:background="#9E9E9E">
+
+    <Button
+        android:id="@+id/btn_save_lives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_disclaimer"
+        android:layout_alignLeft="@+id/btn_disclaimer"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/round_corner5"
+        android:gravity="center"
+        android:onClick="save_lives"
+        android:text="@string/see_first_aid_tips" 
+        android:textColor="#ffffff"
+		android:textSize="28sp"
+		android:textStyle="bold|normal"
+		/>
+
+    <TextView
+        android:id="@+id/textViewMainUp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/learn_first_aid_save_lives"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|normal"
+        android:textSize="38sp"
+      	android:gravity="center"
+        android:background="#64B5F6"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_disclaimer"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wallpaperdown"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMainUp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_corner5"
+        android:onClick="disclaimer"
+        android:text="@string/important_disclaimer"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="bold|normal" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
+<!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/layout/activity_main.xml -->

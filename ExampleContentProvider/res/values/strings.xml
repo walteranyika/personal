@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExampleContentProvider</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="content">Content</string>
+    <string name="inbox">Show  Inbox</string>
+    <string name="save_locally">Save Locally</string>
+    <string name="show_locally">Show Saved Messages</string>
+    <string name="names">Names</string>
+    <string name="email">Email</string>
+
+</resources>

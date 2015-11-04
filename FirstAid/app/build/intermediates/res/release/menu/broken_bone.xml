@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/share"
+        android:icon="@android:drawable/ic_menu_share"
+        />
+</menu><!-- From: file:/D:/android_projects/FirstAid/app/src/main/res/menu/broken_bone.xml -->

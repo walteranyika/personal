@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\android_projects\FirstAid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\classes-17d6fb1d05488ce8c2f5af2c20643d2988e1cad7.jar" />
+    </item>
+    <item
+        jar="D:\android_projects\FirstAid\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\classes-3f149eccf5e78fc3fda72e17b7a878685f05e452.jar" />
+    </item>
+    <item
+        jar="D:\android_projects\FirstAid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\classes-29a9b1a10664e7d5f8d59f4f6f290a5f7266a685.jar" />
+    </item>
+    <item
+        jar="D:\android_projects\FirstAid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\classes-c77157aad2b9edbbca0f5ddb90cc68c2f20c3be0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Walter\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-e252709529d95d9ff05bb9159d1901a04475df82.jar" />
+    </item>
+    <item
+        jar="D:\android_projects\FirstAid\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-14b534f1717949b58faa273de1a1d234c0a0d7fb.jar" />
+    </item>
+    <item
+        jar="D:\android_projects\FirstAid\app\libs\google-play-services_lib.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ea923d54b5abcba085c4f54e1ac7e7859819e3e0">
+        <dex dex="D:\android_projects\FirstAid\app\build\intermediates\pre-dexed\debug\google-play-services_lib-28a35c8b3a9e7a068b4e3a10049b294227813b04.jar" />
+    </item>
+
+</items>
