@@ -1,0 +1,14 @@
+package com.walter.pikipiki.network;
+
+import android.content.Context;
+
+public class SyncRecords {
+	Context context;
+	public SyncRecords(Context context) {
+		super();
+		this.context = context;
+	}
+    public void sync(){
+    	
+    }
+}

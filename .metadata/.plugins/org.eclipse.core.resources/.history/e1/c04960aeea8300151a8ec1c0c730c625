@@ -1,0 +1,95 @@
+package com.walter.pikipiki;
+
+import com.walter.pikipiki.model.Database;
+import com.walter.pikipiki.model.MotorBike;
+import com.walter.pikipiki.network.SyncService;
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	TextView tvregNo, tvownerNames, tvownerId, tvdriverNames, tvdriverId,tvregDate, tvarea, tvphone;
+	EditText edtSearch;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		tvregNo = (TextView) findViewById(R.id.textViewRegNo);
+		tvownerNames = (TextView) findViewById(R.id.textViewOwnerName);
+		tvownerId = (TextView) findViewById(R.id.textViewOwnerID);
+		tvdriverNames = (TextView) findViewById(R.id.textViewDriverNames);
+		tvdriverId = (TextView) findViewById(R.id.textViewDrriverId);
+		tvregDate = (TextView) findViewById(R.id.textViiewRegDate);//
+		tvarea = (TextView) findViewById(R.id.textViewArea);
+		tvphone = (TextView) findViewById(R.id.textViewPhone);
+		edtSearch = (EditText) findViewById(R.id.editTextSearch);
+		
+	}
+	public void search(View v) {
+		String s = edtSearch.getText().toString().trim();
+		//Database db=new Database(this);
+		//Toast.makeText(getApplicationContext(),	"You have "+db.countRecords(),	Toast.LENGTH_SHORT).show();
+		
+		if (s.length() > 5) 
+		{
+			new SearchDB().execute(new String[] { s });
+		} else 
+		{
+			Toast.makeText(getApplicationContext(),	"Invalid Search Term",	Toast.LENGTH_SHORT).show();
+		}
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if(item.getItemId()==R.id.action_sync)
+		{
+			
+		 Intent i=new Intent(this,SyncService.class);
+		 startService(i);
+		}
+		return super.onOptionsItemSelected(item);
+	}
+    private class SearchDB extends AsyncTask<String, Void, MotorBike> {
+
+		@Override
+		protected MotorBike doInBackground(String... search) {
+			Database db = new Database(getApplicationContext());
+			return db.searcBike(search[0]);
+		}
+
+		@Override
+		protected void onPostExecute(MotorBike result) {
+			if (result != null) {
+				tvarea.setText(result.getArea());
+				tvdriverId.setText(result.getDriverId());
+				tvdriverNames.setText(result.getDriverNames());
+				tvownerId.setText(result.getOwnerId());
+				tvownerNames.setText(result.getOwnerNames());
+				tvphone.setText(result.getPhone());
+				tvregDate.setText(result.getRegDate());
+				tvregNo.setText(result.getRegNo());
+			} else {
+				Toast.makeText(getApplicationContext(),
+						"No Item Found That Matches Your Search Term",
+						Toast.LENGTH_SHORT).show();
+			}
+			super.onPostExecute(result);
+		}
+
+	}
+
+}

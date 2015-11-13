@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Testing</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_one">Click Me</string>
+    <string name="btn_two">Click Me Too</string>
+</resources>

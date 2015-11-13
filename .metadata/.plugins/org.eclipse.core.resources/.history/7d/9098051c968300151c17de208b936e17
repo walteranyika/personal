@@ -1,0 +1,43 @@
+package com.walter.pikipiki.model;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class Database extends SQLiteOpenHelper {
+
+	
+	private static final int VERSION = 1;
+	private static final String DB_NAME = "pikipiki";
+
+	public Database(Context context) {
+		super(context,DB_NAME , null, VERSION);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		String sql="CREATE TABLE IF NOT EXISTS bikes " +
+							"(id INTEGER PRIMARY KEY AUTOINCREMENT," +
+							" uid TEXT NOT NULL, " +
+							" reg_no TEXT NOT NULL, " +
+							" owner_names TEXT NOT NULL, " +
+							" owner_id TEXT NOT NULL, " +
+							" driver_names TEXT NOT NULL, " +
+							" driver_id TEXT NOT NULL, " +
+							" reg_date TEXT NOT NULL, " +
+							" area TEXT NOT NULL, " +							
+							" owner_phone TEXT NOT NULL)";
+	    db.execSQL(sql);	
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		String sql="DROP TABLE IF EXISTS bikes";
+		db.execSQL(sql);		
+	}
+    
+	
+	
+	
+	
+}

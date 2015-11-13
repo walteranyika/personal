@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Universal</string>
+    <string name="cook_breakfast">Préparer le petit déjeuner</string>
+    <string name="cook_dinner">Cucinare il pranzo</string>
+    <string name="cook_lunch">cuire déjeuner</string>
+
+</resources>

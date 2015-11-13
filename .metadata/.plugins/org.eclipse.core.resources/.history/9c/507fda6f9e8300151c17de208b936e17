@@ -1,0 +1,110 @@
+package com.walter.pikipiki;
+
+import com.walter.pikipiki.model.Database;
+import com.walter.pikipiki.model.MotorBike;
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	TextView tvregNo, tvownerNames, tvownerId, tvdriverNames, tvdriverId,tvregDate, tvarea, tvphone;
+	EditText edtSearch;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		tvregNo = (TextView) findViewById(R.id.textViewRegNo);
+		tvownerNames = (TextView) findViewById(R.id.textViewOwnerName);
+		tvownerId = (TextView) findViewById(R.id.textViewOwnerID);
+		tvdriverNames = (TextView) findViewById(R.id.textViewDriverNames);
+		tvdriverId = (TextView) findViewById(R.id.textViewDrriverId);
+		tvregDate = (TextView) findViewById(R.id.textViiewRegDate);//
+		tvarea = (TextView) findViewById(R.id.textViewArea);
+		tvphone = (TextView) findViewById(R.id.textViewPhone);
+		edtSearch = (EditText) findViewById(R.id.editTextSearch);
+		new LoadIntoDB().execute();
+	}
+
+	public void search(View v) {
+		String s = edtSearch.getText().toString().trim();
+		if (s.length() > 7) {
+			new SearchDB().execute(new String[] { s });
+		} else {
+			Toast.makeText(getApplicationContext(),
+					"No Item Found That Matches Your Search Term",	Toast.LENGTH_SHORT).show();
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	private class LoadIntoDB extends AsyncTask<Void, Void, Void> {
+		@Override
+		protected Void doInBackground(Void... arg0) {
+			Database db = new Database(getApplicationContext());
+			MotorBike bike1 = new MotorBike("ahdhddbdkjsk", "KAZ 890q",
+					"Charles Okumu", "24567898", "Derrick Onyango",
+					"234567123", "2015-05-15", "Kisumu", "0723456567");
+			MotorBike bike2 = new MotorBike("jddjshdsndsj", "KBD 986q",
+					"Maurice Juma", "24567899", "Francis Onyango", "54673789",
+					"2015-05-15", "Migori", "0723456189");
+			MotorBike bike3 = new MotorBike("ydnskhuvnzdj", "KJW 536g",
+					"Lewis Hamilton", "24567389", "Charles Onyango",
+					"53736272", "2015-05-15", "Kisii", "0723456675");
+			MotorBike bike4 = new MotorBike("hdsfwshkvhss", "KAR 451l",
+					"Didier Drogba", "24567239", "Gregory Onyango",
+					"635363676", "2015-11-15", "Bungoma", "0723456632");
+			MotorBike bike5 = new MotorBike("vfuwvhsnvshv", "KGF 678d",
+					"Titus Naikuni", "24567784", "Dennis Onyango",
+					"6336387387", "2015-04-15", "Chwele", "0723456675");
+			db.insertBike(bike1);
+			db.insertBike(bike2);
+			db.insertBike(bike3);
+			db.insertBike(bike4);
+			db.insertBike(bike5);
+			return null;
+		}
+
+	}
+
+	private class SearchDB extends AsyncTask<String, Void, MotorBike> {
+
+		@Override
+		protected MotorBike doInBackground(String... search) {
+			Database db = new Database(getApplicationContext());
+			return db.searcBike(search[0]);
+		}
+
+		@Override
+		protected void onPostExecute(MotorBike result) {
+			if (result != null) {
+				tvarea.setText(result.getArea());
+				tvdriverId.setText(result.getDriverId());
+				tvdriverNames.setText(result.getDriverNames());
+				tvownerId.setText(result.getOwnerId());
+				tvownerNames.setText(result.getOwnerNames());
+				tvphone.setText(result.getPhone());
+				tvregDate.setText(result.getRegDate());
+				tvregNo.setText(result.getRegNo());
+			} else {
+				Toast.makeText(getApplicationContext(),
+						"No Item Found That Matches Your Search Term",
+						Toast.LENGTH_SHORT).show();
+			}
+			super.onPostExecute(result);
+		}
+
+	}
+
+}

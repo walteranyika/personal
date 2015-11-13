@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Universal</string>
+    <string name="action_settings">Settings</string>
+    <string name="cook_dinner">Cook Dinner</string>
+    <string name="cook_breakfast">Cook Breakfast</string>
+    <string name="cook_lunch">Cook Lunch</string>
+
+</resources>

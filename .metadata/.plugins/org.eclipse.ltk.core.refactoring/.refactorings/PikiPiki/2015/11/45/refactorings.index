@@ -1,0 +1,49 @@
+1446709495586	Extracts string 'null' into R.string.motorbike
+1446710044096	Rename field 'textView3'
+1446710072114	Rename field 'TextView02'
+1446710100863	Rename field 'TextView04'
+1446710127001	Rename field 'TextView05'
+1446710148086	Rename field 'TextView08'
+1446710159527	Rename field 'TextView10'
+1446710216113	Rename field 'editText1'
+1446710501577	Extract constant 'PIKIPIKI'
+1446710520411	Rename field 'PIKIPIKI'
+1446710538089	Extract constant 'VERSION'
+1446714019887	Rename field 'textView1'
+1446714429396	Rename field 'TextView02'
+1446739436252	Extracts string 'Sync' into R.string.sync
+1446742882026	Extract method 'processJson'
+1446743838366	Extracts string 'Phone' into R.string.phone
+1446743844538	Extracts string '0734567843' into R.string._0734567843
+1446743867185	Extracts string 'Bungoma' into R.string.area
+1446743884752	Extracts string 'Area' into R.string.area
+1446743907850	Extracts string 'Reg Date' into R.string.reg_date
+1446743923444	Extracts string '28/67/2000' into R.string.reg_date
+1446743935099	Extracts string 'Driver ID' into R.string.driver_id
+1446743951176	Extracts string '234678976' into R.string.driver_id
+1446743963509	Extracts string 'Driver' into R.string.driver
+1446743972825	Extracts string 'Terry Emmanuel' into R.string.driver
+1446743982590	Extracts string 'Owner' into R.string.owner
+1446743993834	Extracts string 'Kamuzu Banda' into R.string.owner
+1446744006386	Extracts string 'Owner ID' into R.string.owner_id
+1446744017727	Extracts string '246678907' into R.string.owner_id
+1446744034741	Extracts string 'Search' into R.string.search
+1446744051053	Extracts string 'Bike Reg Number' into R.string.bike_reg_number
+1446744865854	Move compilation unit
+1446749031044	Extracts string 'Back Ground Image' into R.string.back_ground_image
+1446753244491	Delete element
+1446753250906	Delete element
+1446753255595	Delete element
+1446753261181	Delete element
+1446753267801	Delete element
+1446753275799	Delete element
+1446793750350	Extracts string 'Background Image' into R.string.background_image
+1446794537770	Rename field 'TextView02'
+1446794552034	Rename field 'TextView04'
+1446794571500	Rename field 'TextView06'
+1446794663237	Rename field 'textViewOwnerName'
+1446794696748	Extracts string 'null' into R.string.empty_string
+1446795141145	Extracts string 'Number Plate' into R.string.number_plate
+1446795347333	Rename field 'textView1'
+1446811063530	Rename field 'button1'
+1446811432328	Delete element

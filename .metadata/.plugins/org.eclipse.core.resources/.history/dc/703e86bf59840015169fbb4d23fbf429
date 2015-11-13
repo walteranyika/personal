@@ -1,0 +1,31 @@
+package com.walter.pikipiki;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class DetailsActivity extends Activity {
+TextView tvNameOwner,tvIdOwner,tvDRiverNames,tvDriverId,tvPhone,tvArea,tvRegDate,tvRegNo;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_details);
+		tvNameOwner=(TextView) findViewById(R.id.tvOwnerName);
+		tvIdOwner=(TextView) findViewById(R.id.tvOwnerId);
+		tvDRiverNames=(TextView) findViewById(R.id.tvDriverName);
+		tvDriverId=(TextView) findViewById(R.id.tvDriverId);
+		tvPhone=(TextView) findViewById(R.id.tvPhone);
+		tvRegDate=(TextView) findViewById(R.id.tvDate);
+		tvRegNo=(TextView) findViewById(R.id.tvRegNo);
+		
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.details, menu);
+		return true;
+	}
+
+}

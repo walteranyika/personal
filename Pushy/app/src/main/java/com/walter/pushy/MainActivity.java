@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
             Log.d("RegisterActivity", "onClick of Share: After finish.");
         }
 
+
     }
 
     public String registerGCM() {
